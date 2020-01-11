@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xyz.penghaonan.pagescrollersample.features.pulldownrefresh.PullDownRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    tools:context=".features.pulldownrefresh.PullDownRefreshActivity">
+
+    <FrameLayout
+        android:id="@+id/bannerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bkg_white_2_blue">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="80dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/refreshTextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="下拉刷新"
+            android:textColor="#fff" />
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef"
+        tools:visibility="gone" />
+</xyz.penghaonan.pagescrollersample.features.pulldownrefresh.PullDownRefreshLayout>
